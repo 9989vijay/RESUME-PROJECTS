@@ -1,9 +1,12 @@
 ##STOCK PRICE PREDICATION
 
 
+
 This project focuses on predicting stock price movement using machine learning techniques. It uses historical stock data (Open, High, Low, Close, Volume) to analyze trends and build predictive models.
 
  ##Features
+
+ 
 Data preprocessing and cleaning
 Feature engineering (date-based features, price differences)
 Data visualization (graphs, distributions, heatmaps)
