@@ -1,27 +1,55 @@
-##STOCK PRICE PREDICATION
+#  Stock Market Movement Prediction
 
-This project focuses on predicting stock price movement using machine learning techniques. It uses historical stock data (Open, High, Low, Close, Volume) to analyze trends and build predictive models.
+##  Overview
 
- ##Features
- 
-Data preprocessing and cleaning
-Feature engineering (date-based features, price differences)
-Data visualization (graphs, distributions, heatmaps)
-Machine learning models:
-Logistic Regression
-Support Vector Machine (SVM)
-XGBoost
-Model evaluation using accuracy and ROC-AUC
-## Dataset
+Analyzed Tesla stock data and built machine learning models to predict whether the stock price will go **up or down** the next day.
 
-The dataset contains historical stock data including price and volume information .
+---
 
- ##Technologies Used
-Python
-NumPy, Pandas
-Matplotlib, Seaborn
-Scikit-learn
-XGBoost
-## Output
+##  Approach
 
-The model predicts whether the stock price will increase or decrease the next day.
+* Data cleaning and preprocessing
+* Feature engineering:
+
+  * open-close
+  * low-high
+  * is_quarter_end
+* Created target:
+
+  * 1 → price increases
+  * 0 → price decreases
+
+---
+
+##  Models Used
+
+* Logistic Regression
+* SVC
+* XGBoost
+
+---
+
+##  Evaluation
+
+* Metric: ROC-AUC
+* Accuracy ~50% (indicates difficulty of stock prediction)
+
+---
+
+##  Key Insights
+
+* Data is highly volatile and right-skewed
+* Strong long-term growth observed
+* Basic models struggle to capture patterns
+
+---
+
+## Tech Stack
+
+Python, Pandas, NumPy, Matplotlib, Scikit-learn, XGBoost
+
+---
+
+##  Conclusion
+
+Stock movement prediction is complex; better performance requires advanced models and additional financial features.
